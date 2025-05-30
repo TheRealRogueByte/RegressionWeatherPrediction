@@ -1,4 +1,4 @@
-# Weather Forecasting (Regression) 🚀
+# Weather Forecasting (Regression)
 
 This project uses a neural-network regression model to predict tomorrow’s weather variables (precipitation, high/low temperature, and wind speed) based on historical daily observations. It leverages time-series features, meteorological measurements, and categorical weather codes to provide accurate continuous forecasts.
 
