@@ -28,7 +28,7 @@ except ValueError:
 month = dt.month
 weekday = dt.weekday()
 
-X_user = pd.DataFrame([{
+X_user = pd.DataFrame([{ #single-row that matches original feature cols
     "precipitation": precip,
     "temp_max": temp_max,
     "temp_min": temp_min,
@@ -41,7 +41,7 @@ X_user = pd.DataFrame([{
 X_trans = preprocessor.transform(X_user)
 y_pred = model.predict(X_trans)[0]
 
-pred_precip, pred_high, pred_low, pred_wind = y_pred
+pred_precip, pred_high, pred_low, pred_wind = y_pred #unpack
 
 print("\nForecast for Tomorrow")
 print(f"  Precipitation: {pred_precip:.2f}")

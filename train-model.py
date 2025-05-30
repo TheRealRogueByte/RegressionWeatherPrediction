@@ -24,7 +24,7 @@ feature_cols =[
     ]
 X_raw = df[feature_cols]
 
-y = df[["precipitation", "temp_max", "temp_min", "wind"]].shift(-1)
+y = df[["precipitation", "temp_max", "temp_min", "wind"]].shift(-1) #shift up by one day(drop last row to align)
 X_raw = X_raw.iloc[:-1].copy()
 y = y.iloc[:-1].copy()
 
